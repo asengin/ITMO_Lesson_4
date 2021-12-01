@@ -28,15 +28,15 @@ namespace _2_LoopDoWhile
                 if (numRange > 0)
                     countPlus++;
                 else
-                    if (numRange == 0) //Проверка для первого значения. Если не проводить, то первая итерация цикла в случае введенного 0 приведет к неверно посчитанному количеству отрицательных значений
+                    if (numRange == 0) //Проверка на введенный 0, если не проводить счетчик увеличивает значение
                     break;
                 else countMinus++;
 
-            } while (numRange!=0);
-            if (countPlus==countMinus)
+            } while (numRange != 0);
+            if (countPlus == countMinus)
                 Console.WriteLine($"Количество отрицательных и положительных чисел равно и составляет: {countPlus}");
             else
-                Console.WriteLine(countPlus>countMinus?$"Больше положительных: {countPlus}":$"Больше отрицательных: {countMinus}");
+                Console.WriteLine(countPlus > countMinus ? $"Больше положительных: {countPlus}" : $"Больше отрицательных: {countMinus}");
             Console.ReadKey();
         }
     }
