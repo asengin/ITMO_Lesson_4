@@ -29,7 +29,7 @@ namespace _3_LoopWhile
             uint i = 0;
 
             if (rectA <= 0 || rectB <= 0 || sqrC <= 0)
-                Console.WriteLine("Значения стороy прямоугольника и квадрата должны быть положительными и больше 0");
+                Console.WriteLine("Значения сторон прямоугольника и квадрата должны быть положительными и больше 0");
             else
             {
                 while (lenghtRectB <= rectB)
